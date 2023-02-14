@@ -1,0 +1,45 @@
+.mediaGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 32px;
+  margin-left: 22px;
+}
+
+.strip {
+  position: relative;
+  width: 1px;
+  height: 191px;
+}
+
+.strip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #abb2bf;
+}
+
+.socials {
+  margin-top: 14px;
+}
+
+.socialsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.socialsItem {
+  list-style: none;
+}
+
+@media (max-width: 1060px) {
+  .mediaGroup {
+    display: none;
+  }
+}

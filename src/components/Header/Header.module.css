@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 61px;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo > svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.headerLogo > span {
+  color: white;
+  font-size: 16px;
+  font-weight: Bold;
+}
+
+.menuList {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.itemLink {
+  color: #abb2bf;
+  text-decoration: none;
+}
+
+.itemLink > span {
+  color: #c778dd;
+}
+
+.active {
+  color: white;
+}
+
+.langSwitcher {
+  position: relative;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #abb2bf;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.langSwitcher::after {
+  content: '❯';
+  font-size: 10px;
+  top: 1px;
+  right: -10px;
+  position: absolute;
+  transform: rotate(90deg);
+}
