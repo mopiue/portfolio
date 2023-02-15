@@ -2,6 +2,12 @@ import { useState } from 'react'
 import styles from './Header.module.css'
 
 function Header() {
+  const [active, setActive] = useState({ current: 'home' })
+
+  function handleLinkClick(item) {
+    setActive({ current: item })
+  }
+
   const menuItems = [
     {
       name: 'home',
@@ -42,51 +48,19 @@ function Header() {
       </div>
       <div className={styles.headerMenu}>
         <ul className={styles.menuList}>
-          {/* map menu items */}
           {menuItems.map((item, index) => (
             <li className={styles.listItem}>
-              <a className={`${styles.itemLink}`} href={item.link}>
+              <a
+                className={`${styles.itemLink}`}
+                href={item.link}
+                onClick={() => handleLinkClick(item.name)}
+                style={active.current === item.name ? { color: '#FFFFFF' } : {}}
+              >
                 <span>#</span>
                 {item.name}
               </a>
             </li>
           ))}
-          {/* <li className={styles.listItem}>
-            <a
-              className={`${styles.itemLink} ${active ? styles.active : ''}`}
-              href="#"
-              onClick={handleLinkClick}
-            >
-              <span>#</span>home
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a
-              className={`${styles.itemLink} ${active ? styles.active : ''}`}
-              href="#"
-              onClick={handleLinkClick}
-            >
-              <span>#</span>works
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a
-              className={`${styles.itemLink} ${active ? styles.active : ''}`}
-              href="#"
-              onClick={handleLinkClick}
-            >
-              <span>#</span>about-me
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a
-              className={`${styles.itemLink} ${active ? styles.active : ''}`}
-              href="#"
-              onClick={handleLinkClick}
-            >
-              <span>#</span>contacts
-            </a>
-          </li> */}
           <li className={`${styles.listItem} ${styles.lang}`}>
             <button className={styles.langSwitcher}>EN</button>
           </li>

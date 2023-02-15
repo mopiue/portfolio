@@ -25,6 +25,7 @@
 
 .menuList {
   display: flex;
+  align-items: center;
   gap: 32px;
   list-style: none;
 }
@@ -43,7 +44,8 @@
 }
 
 .langSwitcher {
-  position: relative;
+  display: flex;
+  align-items: center;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   color: #abb2bf;
@@ -54,9 +56,8 @@
 
 .langSwitcher::after {
   content: '❯';
+  display: inline-block;
+  margin-left: 4px;
   font-size: 10px;
-  top: 1px;
-  right: -10px;
-  position: absolute;
   transform: rotate(90deg);
 }
