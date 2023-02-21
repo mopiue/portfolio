@@ -1,49 +1,49 @@
+import { motion } from 'framer-motion'
+import MediaGroup from './components/MediaGroup/MediaGroup'
 import Header from './components/Header/Header'
-import MediaGroup from './components/Header/MediaGroup/MediaGroup'
-import './App.css'
+import Intro from './components/Intro/Intro'
+import Projects from './components/Projects/Projects'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <>
       <MediaGroup />
-      <div className="App">
-        <Header />
-        <div className="intro">
-          <div className="intro__left-side">
-            <h1 className="intro__who-is">
-              Nucassi is a self-learning <span>front-end developer</span>
-            </h1>
-            <p className="intro__description">
-              He crafts responsive websites where technologies meet creativity
-            </p>
-            <button className="intro__contact-btn">Contact me !!</button>
-          </div>
-          <div className="intro__right-side">
-            <div className="intro__logo">
-              <img
-                className="intro__logo-img"
-                src={`${process.env.PUBLIC_URL}/assets/images/intro/logo.svg`}
-                alt="logo"
-              />
-              <img
-                className="intro__lines-img"
-                src={`${process.env.PUBLIC_URL}/assets/images/others/linesInSquare.svg`}
-                alt="logo"
-              />
-              <img
-                className="intro__dots-img"
-                src={`${process.env.PUBLIC_URL}/assets/images/others/dots.svg`}
-                alt="logo"
-              />
-              <div className="intro__logo-banner">
-                <span>
-                  Currently working on <strong>Portfolio</strong>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="_background">
+        <img
+          className="square_by_quote"
+          src={`${process.env.PUBLIC_URL}/assets/images/others/square.svg`}
+          alt=""
+        />
       </div>
+      <div className="wrapper">
+        <Header />
+        <Intro />
+        {/* TODO: Заменить <span> на div */}
+        <motion.div
+          className="quote"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.8 }}
+        >
+          <span className="quote__text">
+            With great power comes great electricity bill
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/quote/quotes.svg`}
+              alt=""
+            />
+          </span>
+          <span className="quote__author">
+            - Dr. Who
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/quote/quotes.svg`}
+              alt=""
+            />
+          </span>
+        </motion.div>
+        <Projects />
+      </div>
+      <Footer />
     </>
   )
 }

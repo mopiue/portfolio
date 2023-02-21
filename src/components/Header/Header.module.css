@@ -6,23 +6,6 @@
   height: 61px;
 }
 
-.headerLogo {
-  display: flex;
-  align-items: center;
-}
-
-.headerLogo > svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-
-.headerLogo > span {
-  color: white;
-  font-size: 16px;
-  font-weight: Bold;
-}
-
 .menuList {
   display: flex;
   align-items: center;
@@ -32,15 +15,16 @@
 
 .itemLink {
   color: #abb2bf;
+  /* font-weight: 400; */
   text-decoration: none;
+}
+
+.itemLink:hover {
+  color: #ffffff;
 }
 
 .itemLink > span {
   color: #c778dd;
-}
-
-.active {
-  color: white;
 }
 
 .langSwitcher {

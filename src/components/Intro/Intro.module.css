@@ -1,33 +1,28 @@
-.App {
-  width: 1024px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .intro {
   margin-top: 62px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 149px;
 }
 
-.intro__who-is {
+.introWhoIs {
   font-size: 32px;
   font-weight: 600;
   color: #ffffff;
 }
 
-.intro__who-is > span {
+.introWhoIs > span {
   color: #c778dd;
 }
 
-.intro__description {
+.introDescription {
   font-size: 16px;
   font-weight: 400;
   color: #abb2bf;
   margin-top: 32px;
 }
 
-.intro__contact-btn {
+.introContactBtn {
   font-family: 'Fira Code';
   width: 148px;
   height: 37px;
@@ -38,32 +33,33 @@
   outline: none;
   background-color: rgb(0, 0, 0, 0);
   border: 1px solid #c778dd;
+  cursor: pointer;
 }
 
-.intro__right-side {
+.introRightSide {
   position: relative;
 }
 
-.intro__logo-img {
+.introLogoImg {
   position: relative;
   z-index: 1;
 }
 
-.intro__lines-img {
+.introLinesImg {
   position: absolute;
   top: 84px;
   right: 314px;
   z-index: 0;
 }
 
-.intro__dots-img {
+.introDotsImg {
   position: absolute;
   top: 246px;
   right: 16px;
   z-index: 2;
 }
 
-.intro__logo-banner {
+.introLogoBanner {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -76,16 +72,16 @@
   z-index: 3;
 }
 
-.intro__logo-banner span {
+.introLogoBanner span {
   color: #abb2bf;
 }
 
-.intro__logo-banner span > strong {
+.introLogoBanner span > strong {
   color: #ffffff;
   font-weight: 600;
 }
 
-.intro__logo-banner::before {
+.introLogoBanner::before {
   content: '';
   display: block;
   width: 16px;

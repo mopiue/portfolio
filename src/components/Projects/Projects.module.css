@@ -1,0 +1,126 @@
+.projectsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 68px;
+}
+
+.projectsTitleText {
+  position: relative;
+  color: #ffffff;
+}
+
+.projectsTitleText > span {
+  color: #c778dd;
+}
+
+.projectsTitle > span {
+  color: #ffffff;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.projectsTitleText::after {
+  content: '';
+  display: inline-block;
+  width: 511px;
+  top: 50%;
+  left: 100%;
+  margin-left: 16px;
+  position: absolute;
+  height: 1px;
+  background-color: #c778dd;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex-basis: calc(33% - 6px);
+  border: 1px solid #abb2bf;
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.cardImage {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage > img {
+  height: 201px;
+  width: 100%;
+}
+
+.cardStack {
+  color: #abb2bf;
+  padding: 0 8px;
+  flex-basis: 100%;
+  border: 1px solid #abb2bf;
+  border-right: none;
+  border-left: none;
+}
+
+.cardStack > span {
+  line-height: 220%;
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardTitle {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.cardDescription {
+  color: #abb2bf;
+  margin-bottom: 16px;
+}
+
+.cardActions {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.buttons {
+  width: 109px;
+  height: 37px;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btnLive {
+  color: white;
+  border: 1px solid #c778dd;
+}
+
+.btnLive:hover {
+  background-color: rgba(199, 120, 221, 0.2);
+}
+
+.btnGithub {
+  color: #abb2bf;
+  border: 1px solid #abb2bf;
+}
+
+.btnGithub:hover {
+  background-color: rgba(171, 178, 191, 0.2);
+}

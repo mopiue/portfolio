@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300, 400;500;600;700&family=Roboto:wght@400;500&display=swap');
 
 * {
   margin: 0;
@@ -8,10 +8,8 @@
 
 #root {
   position: relative;
-}
-
-img {
-  pointer-events: none;
+  padding-bottom: 352px;
+  min-height: 100vh;
 }
 
 body {
@@ -19,5 +17,83 @@ body {
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #1e1e1e;
+  background: #282c33;
+}
+
+img {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #fff3;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c778dd;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+
+/* ===================== */
+
+._background {
+  top: 672px;
+  position: absolute;
+  width: 100vw;
+}
+
+.square_by_quote {
+  position: fixed;
+  right: -9px;
+  z-index: 100;
+}
+
+.wrapper {
+  width: 1044px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
+}
+
+.quote {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-bottom: 74px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.quote__text {
+  padding: 32px;
+  border: 1px solid #abb2bf;
+  position: relative;
+  font-weight: 500;
+}
+
+.quote__text img {
+  position: absolute;
+  top: -14px;
+  left: 11px;
+}
+
+.quote__author {
+  border: 1px solid #abb2bf;
+  border-top: none;
+  padding: 16px;
+  position: relative;
+}
+
+.quote__author > img {
+  position: absolute;
+  top: -14px;
+  right: 16px;
 }

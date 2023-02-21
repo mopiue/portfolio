@@ -1,0 +1,16 @@
+.headerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo > svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.headerLogo > span {
+  color: white;
+  font-size: 16px;
+  font-weight: Bold;
+}
