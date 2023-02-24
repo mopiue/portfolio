@@ -16,7 +16,7 @@ function Intro() {
                 1000,
                 'front',
                 1000,
-                '-end',
+                'end',
                 1000,
                 'front-end developer',
                 5000,
@@ -65,11 +65,6 @@ function Intro() {
             className={styles.introDotsImg}
             src={`${process.env.PUBLIC_URL}/assets/images/others/dots.svg`}
             alt="logo"
-            // animate={{
-            //   scale: [1, 2, 2, 1, 1],
-            //   rotate: [0, 0, 270, 270, 0],
-            //   // borderRadius: ['20%', '20%', '50%', '50%', '20%'],
-            // }}
           />
           <div className={styles.introLogoBanner}>
             <span>

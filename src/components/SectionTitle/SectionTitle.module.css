@@ -1,0 +1,14 @@
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 68px;
+}
+
+.sectionTitle > span {
+  color: #ffffff;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+}

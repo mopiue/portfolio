@@ -4,7 +4,7 @@
   align-items: center;
   position: fixed;
   width: 32px;
-  margin-left: 22px;
+  margin-left: -122px;
 }
 
 .strip {
@@ -35,7 +35,7 @@
   list-style: none;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1257px) {
   .mediaGroup {
     display: none;
   }

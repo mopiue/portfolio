@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import PopupContainer from '../PopupContainer/PopupContainer'
 import styles from './Projects.module.css'
-import { motion } from 'framer-motion'
 
 const sameHeightCardStack = false
 
@@ -23,17 +23,11 @@ function Projects() {
 
   return (
     <div className={styles.projects}>
-      <div className={styles.projectsTitle}>
-        <h2 className={styles.projectsTitleText}>
-          <span>#</span>projects
-        </h2>
-        <span>View all {`~~>`}</span>
-      </div>
-      <motion.div
-        className={styles.cardContainer}
-        initial={{ opacity: 0, y: 150 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+      <PopupContainer
+        cn={styles.cardContainer}
+        title={'projects'}
+        additionalLink={false}
+        lineWidth={511}
       >
         <div className={styles.card}>
           <div className={styles.cardImage}>
@@ -133,7 +127,7 @@ function Projects() {
             </button>
           </div>
         </div>
-      </motion.div>
+      </PopupContainer>
     </div>
   )
 }

@@ -3,12 +3,13 @@ import MediaGroup from './components/MediaGroup/MediaGroup'
 import Header from './components/Header/Header'
 import Intro from './components/Intro/Intro'
 import Projects from './components/Projects/Projects'
+import Skills from './components/Skills/Skills'
+import About from './components/About/About'
 import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <>
-      <MediaGroup />
       <div className="_background">
         <img
           className="square_by_quote"
@@ -17,9 +18,9 @@ function App() {
         />
       </div>
       <div className="wrapper">
+        <MediaGroup />
         <Header />
         <Intro />
-        {/* TODO: Заменить <span> на div */}
         <motion.div
           className="quote"
           initial={{ opacity: 0, scale: 0.5 }}
@@ -42,6 +43,8 @@ function App() {
           </span>
         </motion.div>
         <Projects />
+        <Skills />
+        <About />
       </div>
       <Footer />
     </>
