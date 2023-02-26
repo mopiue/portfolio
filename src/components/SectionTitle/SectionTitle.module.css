@@ -3,12 +3,12 @@
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
-  margin-bottom: 68px;
 }
 
-.sectionTitle > span {
+.sectionTitle > a {
   color: #ffffff;
   position: relative;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
 }

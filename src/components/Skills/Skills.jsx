@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion'
 import styles from './Skills.module.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
+import PopupContainer from '../PopupContainer/PopupContainer'
 
 function Skills() {
   return (
     <div className={styles.skills}>
-      <SectionTitle title={'skills'} lineWidth={239} />
-      <motion.div
-        className={styles.skillsContainer}
-        initial={{ opacity: 0, y: 150 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+      <PopupContainer
+        cn={styles.skillsContainer}
+        title={'skills'}
+        lineWidth={239}
+        marginBtm={24}
       >
         <div className={styles.abstractions}>
           <img
@@ -61,7 +61,7 @@ function Skills() {
             <p className={styles.cardDescription}>React Express.js</p>
           </div>
         </div>
-      </motion.div>
+      </PopupContainer>
     </div>
   )
 }

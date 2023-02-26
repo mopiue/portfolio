@@ -1,12 +1,11 @@
 .skills {
-  padding-bottom: 226px;
+  margin-bottom: 125px;
 }
 
 .skillsContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .abstractions {

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import styles from './SectionTitle.module.css'
 
-function SectionTitle({ title, additionalLink, lineWidth }) {
+function SectionTitle({ title, lineWidth, marginBtm }) {
   const SectionTitleText = styled.h2`
     position: relative;
     color: #ffffff;
@@ -21,12 +21,15 @@ function SectionTitle({ title, additionalLink, lineWidth }) {
     }
   `
   return (
-    <div className={styles.sectionTitle}>
+    <div
+      className={styles.sectionTitle}
+      style={{ marginBottom: `${marginBtm}px` }}
+    >
       <SectionTitleText>
         <span>#</span>
         {title}
       </SectionTitleText>
-      {additionalLink ? <span>View all {`~~>`}</span> : ''}
+      {title === 'projects' ? <a href="#">View all {`~~>`}</a> : ''}
     </div>
   )
 }

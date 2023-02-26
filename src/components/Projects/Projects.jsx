@@ -28,6 +28,7 @@ function Projects() {
         title={'projects'}
         additionalLink={false}
         lineWidth={511}
+        marginBtm={48}
       >
         <div className={styles.card}>
           <div className={styles.cardImage}>

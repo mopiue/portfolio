@@ -8,6 +8,7 @@ function PopupContainer(props) {
         title={props.title}
         additionalLink={props.additionalLink}
         lineWidth={props.lineWidth}
+        marginBtm={props.marginBtm}
       ></SectionTitle>
       <motion.div
         className={props.cn}

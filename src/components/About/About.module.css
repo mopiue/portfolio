@@ -1,0 +1,65 @@
+.about {
+  margin-bottom: 112px;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutText {
+  width: 520px;
+  color: #abb2bf;
+}
+
+.aboutImage {
+  display: flex;
+  position: relative;
+  background-image: url('../../../public/assets/images/about/Image.svg');
+  background-repeat: no-repeat;
+  width: 339px;
+  height: 477px;
+  top: -31px;
+}
+
+.aboutImage::after {
+  content: '';
+  display: flex;
+  position: absolute;
+  width: 271px;
+  height: 1px;
+  right: 24px;
+  bottom: 0;
+  background-color: #c778dd;
+}
+
+.foregroundDots {
+  background-image: url('../../../public/assets/images/others/dots.svg');
+  position: absolute;
+  top: 59px;
+  left: -4px;
+  width: 84px;
+  height: 84px;
+}
+
+.foregroundWiderDots {
+  background-image: url('../../../public/assets/images/others/widerDots.svg');
+  position: absolute;
+  top: 279px;
+  right: 16px;
+  width: 104px;
+  height: 56px;
+}
+
+.aboutButton {
+  display: block;
+  width: 148px;
+  height: 37px;
+  margin-top: 27px;
+  border: 1px solid #c778dd;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
