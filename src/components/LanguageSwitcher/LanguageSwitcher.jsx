@@ -21,6 +21,10 @@ function LanguageSwitcher() {
     }
   `
 
+  const ArrowSwitcher = styled.span`
+    transform: ${open ? 'rotate(-90deg);' : 'rotate(90deg)'};
+  `
+
   function handleLangSwitcherClick() {
     setIsOpen(!open)
   }
@@ -38,6 +42,7 @@ function LanguageSwitcher() {
           onClick={handleLangSwitcherClick}
         >
           {active}
+          <ArrowSwitcher>❯</ArrowSwitcher>
         </LangSwitcher>
       </li>
       {open && (

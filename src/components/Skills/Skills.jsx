@@ -3,7 +3,7 @@ import PopupContainer from '../PopupContainer/PopupContainer'
 
 function Skills() {
   return (
-    <div className={styles.skills}>
+    <section className={styles.skills}>
       <PopupContainer
         cn={styles.skillsContainer}
         title={'skills'}
@@ -60,7 +60,7 @@ function Skills() {
           </div>
         </div>
       </PopupContainer>
-    </div>
+    </section>
   )
 }
 

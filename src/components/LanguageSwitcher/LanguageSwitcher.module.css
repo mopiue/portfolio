@@ -1,6 +1,8 @@
 .langSwitcher {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 50px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   color: #abb2bf;
@@ -9,11 +11,9 @@
   cursor: pointer;
 }
 
-.langSwitcher::after {
-  content: '❯';
-  display: inline-block;
-  margin-left: 4px;
+.langSwitcher > span {
   font-size: 10px;
+  margin-left: 6px;
 }
 
 .langSwitcherPopup {

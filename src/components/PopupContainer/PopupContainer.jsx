@@ -24,6 +24,7 @@ function PopupContainer(props) {
         title={props.title}
         lineWidth={props.lineWidth}
         marginBtm={props.marginBtm}
+        titleDescription={props.titleDescription}
       ></SectionTitle>
       <motion.div
         variants={cardVariants}

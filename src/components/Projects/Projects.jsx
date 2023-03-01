@@ -22,11 +22,10 @@ function Projects() {
   }, [])
 
   return (
-    <div className={styles.projects}>
+    <section className={styles.projects}>
       <PopupContainer
         cn={styles.cardContainer}
-        title={'projects'}
-        additionalLink={false}
+        title="projects"
         lineWidth={511}
         marginBtm={48}
       >
@@ -129,7 +128,7 @@ function Projects() {
           </div>
         </div>
       </PopupContainer>
-    </div>
+    </section>
   )
 }
 

@@ -3,7 +3,7 @@ import PopupContainer from '../PopupContainer/PopupContainer'
 
 function Contacts() {
   return (
-    <div className={styles.contacts}>
+    <section className={styles.contacts}>
       <PopupContainer
         cn={styles.contactsContainer}
         title={'contacts'}
@@ -35,7 +35,7 @@ function Contacts() {
           </div>
         </div>
       </PopupContainer>
-    </div>
+    </section>
   )
 }
 
