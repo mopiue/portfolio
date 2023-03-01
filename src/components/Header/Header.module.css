@@ -11,6 +11,7 @@
   align-items: center;
   gap: 32px;
   list-style: none;
+  position: relative;
 }
 
 .itemLink {
@@ -25,23 +26,4 @@
 
 .itemLink > span {
   color: #c778dd;
-}
-
-.langSwitcher {
-  display: flex;
-  align-items: center;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: #abb2bf;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.langSwitcher::after {
-  content: '❯';
-  display: inline-block;
-  margin-left: 4px;
-  font-size: 10px;
-  transform: rotate(90deg);
 }

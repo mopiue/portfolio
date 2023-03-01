@@ -1,8 +1,14 @@
 .intro {
-  margin-top: 62px;
   display: flex;
   justify-content: space-between;
+  margin-top: 62px;
   margin-bottom: 149px;
+}
+
+.introLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .introWhoIs {
@@ -40,20 +46,41 @@
   position: relative;
 }
 
+.introImages {
+  width: 457px;
+  height: 386px;
+}
+
 .introLogoImg {
   position: relative;
+  background-image: url('../../../public/assets/images/intro/logo.svg');
+  background-repeat: no-repeat;
+  width: 457px;
+  height: 386px;
   z-index: 1;
 }
 
+.introLogoImg::after span {
+  color: #abb2bf;
+}
+
 .introLinesImg {
+  background-image: url('../../../public/assets/images/others/linesInSquare.svg');
+  background-repeat: no-repeat;
   position: absolute;
+  width: 155px;
+  height: 156px;
   top: 84px;
   right: 314px;
   z-index: 0;
 }
 
 .introDotsImg {
+  background-image: url('../../../public/assets/images/others/dots.svg');
+  background-repeat: no-repeat;
   position: absolute;
+  width: 84px;
+  height: 84px;
   top: 246px;
   right: 16px;
   z-index: 2;
@@ -62,17 +89,15 @@
 .introLogoBanner {
   display: flex;
   align-items: center;
-  gap: 10px;
   width: 402px;
-  position: absolute;
   left: 19px;
-  bottom: -33px;
+  margin-left: 19px;
   border: 1px solid #abb2bf;
   padding: 8px 0 8px 8px;
-  z-index: 3;
 }
 
 .introLogoBanner span {
+  margin-left: 10px;
   color: #abb2bf;
 }
 

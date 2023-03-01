@@ -11,13 +11,7 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
     <>
-      <div className="_background">
-        <img
-          className="square_by_quote"
-          src={`${process.env.PUBLIC_URL}/assets/images/others/square.svg`}
-          alt=""
-        />
-      </div>
+      <div className="_background"></div>
       <div className="wrapper">
         <MediaGroup />
         <Header />

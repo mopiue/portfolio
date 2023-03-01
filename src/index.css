@@ -43,15 +43,13 @@ img {
 /* ===================== */
 
 ._background {
-  top: 672px;
+  background-image: url('../public/assets/images/others/bg.svg');
+  background-attachment: scroll;
+  background-position: top center;
+  width: 100%;
+  height: calc(100% - 208px);
   position: absolute;
-  width: 100vw;
-}
-
-.square_by_quote {
-  position: fixed;
-  right: -9px;
-  z-index: 100;
+  background-repeat: repeat-y;
 }
 
 .wrapper {

@@ -1,6 +1,4 @@
-import { motion } from 'framer-motion'
 import styles from './Skills.module.css'
-import SectionTitle from '../SectionTitle/SectionTitle'
 import PopupContainer from '../PopupContainer/PopupContainer'
 
 function Skills() {

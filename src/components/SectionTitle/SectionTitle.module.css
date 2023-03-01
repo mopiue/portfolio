@@ -12,3 +12,23 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.sectionTitle > h2 {
+  position: relative;
+  color: #ffffff;
+}
+
+.sectionTitle > h2 > span {
+  color: #c778dd;
+}
+
+.sectionTitle > h2::after {
+  content: '';
+  display: inline-block;
+  top: 50%;
+  left: 100%;
+  margin-left: 16px;
+  position: absolute;
+  height: 1px;
+  background-color: #c778dd;
+}

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 import Logo from '../Logo/Logo'
 import styles from './Header.module.css'
 
@@ -50,9 +51,7 @@ function Header() {
               </a>
             </li>
           ))}
-          <li className={`${styles.listItem} ${styles.lang}`}>
-            <button className={styles.langSwitcher}>EN</button>
-          </li>
+          <LanguageSwitcher />
         </ul>
       </div>
     </header>

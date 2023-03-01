@@ -50,22 +50,10 @@ function Intro() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div>
-          <img
-            className={styles.introLogoImg}
-            src={`${process.env.PUBLIC_URL}/assets/images/intro/logo.svg`}
-            alt="logo"
-          />
-          <img
-            className={styles.introLinesImg}
-            src={`${process.env.PUBLIC_URL}/assets/images/others/linesInSquare.svg`}
-            alt="logo"
-          />
-          <img
-            className={styles.introDotsImg}
-            src={`${process.env.PUBLIC_URL}/assets/images/others/dots.svg`}
-            alt="logo"
-          />
+        <div className={styles.introImages}>
+          <div className={styles.introLogoImg}></div>
+          <div className={styles.introLinesImg}></div>
+          <div className={styles.introDotsImg}></div>
           <div className={styles.introLogoBanner}>
             <span>
               Currently working on <strong>Portfolio</strong>
