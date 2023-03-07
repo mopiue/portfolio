@@ -1,15 +1,16 @@
-.headerLogo {
+.headerLink {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
-.headerLogo > svg {
+.headerLink > img {
   width: 16px;
   height: 16px;
   margin-right: 8px;
 }
 
-.headerLogo > span {
+.headerLink > span {
   color: white;
   font-size: 16px;
   font-weight: Bold;

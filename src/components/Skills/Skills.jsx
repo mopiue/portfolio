@@ -1,15 +1,12 @@
-import styles from './Skills.module.css'
+import Title from '../Title/Title'
 import PopupContainer from '../PopupContainer/PopupContainer'
+import styles from './Skills.module.css'
 
 function Skills() {
   return (
     <section className={styles.skills}>
-      <PopupContainer
-        cn={styles.skillsContainer}
-        title={'skills'}
-        lineWidth={239}
-        marginBtm={24}
-      >
+      <Title title={'skills'} lineWidth={239} marginBtm={24}></Title>
+      <PopupContainer cn={styles.skillsContainer}>
         <div className={styles.abstractions}>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/others/dots.svg`}

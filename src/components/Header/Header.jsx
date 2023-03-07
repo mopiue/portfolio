@@ -1,16 +1,9 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 import Logo from '../Logo/Logo'
 import styles from './Header.module.css'
 
 function Header() {
-  const [active, setActive] = useState({ current: 'home' })
-
-  function handleLinkClick(item) {
-    setActive({ current: item })
-  }
-
   const menuItems = [
     {
       name: 'home',
@@ -18,17 +11,24 @@ function Header() {
     },
     {
       name: 'works',
-      link: '#',
+      link: '/works',
     },
     {
       name: 'about-me',
-      link: '#',
+      link: '/aboutme',
     },
     {
       name: 'contacts',
       link: '/contacts',
     },
   ]
+
+  const itemActive = {
+    color: '#ffffff',
+    fontWeight: 500,
+    textDecoration: 'none',
+    position: 'relative',
+  }
 
   return (
     <>
@@ -38,19 +38,13 @@ function Header() {
           <ul className={styles.menuList}>
             {menuItems.map((item, index) => (
               <li className={styles.listItem} key={index}>
-                <Link
-                  className={`${styles.itemLink}`}
+                <NavLink
+                  className={styles.itemLink}
+                  style={({ isActive }) => (isActive ? itemActive : undefined)}
                   to={item.link}
-                  onClick={() => handleLinkClick(item.name)}
-                  style={
-                    active.current === item.name
-                      ? { color: '#FFFFFF', fontWeight: 500 }
-                      : {}
-                  }
                 >
-                  <span>#</span>
                   {item.name}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

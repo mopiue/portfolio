@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import SectionTitle from '../SectionTitle/SectionTitle'
+import Title from '../Title/Title'
 
 function PopupContainer(props) {
   const cardVariants = {
@@ -20,12 +20,6 @@ function PopupContainer(props) {
 
   return (
     <>
-      <SectionTitle
-        title={props.title}
-        lineWidth={props.lineWidth}
-        marginBtm={props.marginBtm}
-        titleDescription={props.titleDescription}
-      ></SectionTitle>
       <motion.div
         variants={cardVariants}
         className={props.cn}

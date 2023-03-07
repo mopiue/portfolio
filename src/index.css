@@ -59,6 +59,17 @@ img {
   padding: 0 10px;
 }
 
+.projects {
+  margin-bottom: 106px;
+}
+
+.projects__cards-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
 .quote {
   width: fit-content;
   margin: 0 auto;

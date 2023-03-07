@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "imageCard1.jpg",
+    "stack": "HTML CSS Python Flask",
+    "title": "ChertNodes",
+    "description": "Minecraft Server hosting",
+    "liveUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "githubUrl": "https://github.com/"
+  },
+  {
+    "id": 2,
+    "image": "imageCard1.jpg",
+    "stack": "HTML CSS Python Flask",
+    "title": "ChertNodes",
+    "description": "Minecraft Server hosting",
+    "liveUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "githubUrl": "https://github.com/"
+  },
+  {
+    "id": 3,
+    "image": "imageCard1.jpg",
+    "stack": "HTML CSS Python Flask",
+    "title": "ChertNodes",
+    "description": "Minecraft Server hosting",
+    "liveUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "githubUrl": "https://github.com/"
+  },
+  {
+    "id": 4,
+    "image": "imageCard1.jpg",
+    "stack": "HTML CSS Python Flask",
+    "title": "ChertNodes",
+    "description": "Minecraft Server hosting",
+    "liveUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "githubUrl": "https://github.com/"
+  }
+]

@@ -24,8 +24,12 @@
 
 .itemLink {
   color: #abb2bf;
-  /* font-weight: 400; */
   text-decoration: none;
+}
+
+.itemLink::before {
+  content: '#';
+  color: #c778dd;
 }
 
 .itemLink:hover {
@@ -34,4 +38,10 @@
 
 .itemLink > span {
   color: #c778dd;
+}
+
+.itemActive {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
 }

@@ -1,11 +1,11 @@
-.sectionTitle {
+.title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
 }
 
-.sectionTitle > a {
+.title > a {
   color: #ffffff;
   position: relative;
   font-weight: 500;
@@ -13,16 +13,16 @@
   text-decoration: none;
 }
 
-.sectionTitle > h2 {
+.title > h2 {
   position: relative;
   color: #ffffff;
 }
 
-.sectionTitle > h2 > span {
+.title > h2 > span {
   color: #c778dd;
 }
 
-.sectionTitle > h2::after {
+.title > h2::after {
   content: '';
   display: inline-block;
   top: 50%;
@@ -33,7 +33,7 @@
   background-color: #c778dd;
 }
 
-.sectionTitleDescription {
+.titleDescription {
   margin-top: 14px;
   color: #ffffff;
 }

@@ -5,7 +5,7 @@ import './index.css'
 
 import Layout from './components/Layout'
 import App from './App'
-import ContactsPage from './pages/ContactsPage'
+import Projects from './pages/Projects'
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: 'contacts',
-        element: <ContactsPage />,
+        path: 'works',
+        element: <Projects />,
       },
     ],
   },

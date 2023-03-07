@@ -1,15 +1,12 @@
-import styles from './About.module.css'
+import Title from '../Title/Title'
 import PopupContainer from '../PopupContainer/PopupContainer'
+import styles from './About.module.css'
 
 function About() {
   return (
     <section className={styles.about}>
-      <PopupContainer
-        cn={styles.aboutContainer}
-        title={'about-me'}
-        lineWidth={326}
-        marginBtm={23}
-      >
+      <Title title={'about-me'} lineWidth={326} marginBtm={23}></Title>
+      <PopupContainer cn={styles.aboutContainer}>
         <div className={styles.aboutLeftSide}>
           <p className={styles.aboutText}>
             Hello, i’m Elias! <br />
