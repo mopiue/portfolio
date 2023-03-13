@@ -13,18 +13,18 @@
 }
 
 .aboutImage {
-  display: flex;
   position: relative;
   background-image: url('../../../public/assets/images/about/Image.svg');
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin-top: -1px;
   width: 339px;
   height: 477px;
-  top: -31px;
 }
 
 .aboutImage::after {
   content: '';
-  display: flex;
   position: absolute;
   width: 271px;
   height: 1px;
