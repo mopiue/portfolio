@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Title from '../Title/Title'
 
 function PopupContainer(props) {
   const cardVariants = {

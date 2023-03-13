@@ -9,16 +9,19 @@ function About() {
       <PopupContainer cn={styles.aboutContainer}>
         <div className={styles.aboutLeftSide}>
           <p className={styles.aboutText}>
-            Hello, i’m Elias! <br />
+            Hello, i’m Nucassi! <br />
             <br />
-            I’m a self-taught front-end developer based in Kyiv, Ukraine. I can
-            develop responsive websites from scratch and raise them into modern
-            user-friendly web experiences. <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+            quisquam culpa recusandae aliquid debitis non consequatur. Sequi eum
+            quae perspiciatis quibusdam harum explicabo. Deserunt esse voluptate
+            cum, blanditiis at odit dolorum hic pariatur corrupti suscipit autem
+            a, atque repellendus optio soluta nisi molestias voluptatem maiores
+            labore? Adipisci, illum eos. <br />
             <br />
-            Transforming my creativity and knowledge into a websites has been my
-            passion for over a year. I have been helping various clients to
-            establish their presence online. I always strive to learn about the
-            newest technologies and frameworks.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+            perspiciatis, officia perferendis, laudantium voluptatem molestiae
+            quisquam quidem nemo voluptatibus reprehenderit eum. Vero, facere
+            similique natus labore rem illo eos nam!
           </p>
           <button className={styles.aboutButton}>Read more {`🠖`}</button>
         </div>

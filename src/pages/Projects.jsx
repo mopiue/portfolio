@@ -4,18 +4,14 @@ import CardList from '../components/CardList/CardList'
 
 function ContactsPage() {
   return (
-    <div className="contactsPage">
+    <div className="worksPage">
       <Title
         title="projects"
         titleDescription="List of my projects"
         marginBtm={69}
-      ></Title>
+      />
       <Title title="complete-apps" marginBtm="48" />
-      <PopupContainer
-        title="contacts"
-        marginBtm="69"
-        titleDescription="List of my projects"
-      >
+      <PopupContainer>
         <CardList />
       </PopupContainer>
     </div>

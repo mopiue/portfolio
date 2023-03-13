@@ -13,16 +13,17 @@ function LanguageSwitcher() {
     RU: {
       name: 'RU',
     },
+    TR: {
+      name: 'TR',
+    },
   }
 
-  const LangSwitcher = styled.button`
-    &::after {
-      transform: ${open ? 'rotate(-90deg);' : 'rotate(90deg)'};
+  const LangSwitcherItem = styled.li`
+    &:not(:last-child) {
+      ${Object.keys(langItems).length > 1
+        ? 'border-bottom: 1px solid #abb2bf;'
+        : ''}
     }
-  `
-
-  const ArrowSwitcher = styled.span`
-    transform: ${open ? 'rotate(-90deg);' : 'rotate(90deg)'};
   `
 
   function handleLangSwitcherClick() {
@@ -37,13 +38,17 @@ function LanguageSwitcher() {
   return (
     <>
       <li>
-        <LangSwitcher
+        <button
           className={styles.langSwitcher}
           onClick={handleLangSwitcherClick}
         >
           {active}
-          <ArrowSwitcher>❯</ArrowSwitcher>
-        </LangSwitcher>
+          <span
+            style={{ transform: open ? 'rotate(-90deg)' : 'rotate(90deg)' }}
+          >
+            ❯
+          </span>
+        </button>
       </li>
       {open && (
         <div className={styles.langSwitcherPopup}>
@@ -51,9 +56,12 @@ function LanguageSwitcher() {
             {Object.values(langItems).map(
               (item, index) =>
                 item.name !== active && (
-                  <li onClick={handleLangSwitcherChange} key={index}>
+                  <LangSwitcherItem
+                    key={index}
+                    onClick={handleLangSwitcherChange}
+                  >
                     {item.name}
-                  </li>
+                  </LangSwitcherItem>
                 )
             )}
           </ul>

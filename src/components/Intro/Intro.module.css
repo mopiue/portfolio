@@ -31,7 +31,7 @@
 .introContactBtn {
   font-family: 'Fira Code';
   width: 148px;
-  height: 37px;
+  min-height: 37px;
   margin-top: 24px;
   font-size: 16px;
   font-weight: 500;

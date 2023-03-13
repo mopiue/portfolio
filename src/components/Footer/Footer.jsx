@@ -11,7 +11,7 @@ function Footer() {
             <Logo fWeight={400} />
             <span>iamnucassi@gmail.com</span>
           </div>
-          <span>Self-learning front-end developer</span>
+          <span>Self-taught front-end developer</span>
         </div>
         <div className={styles.rightSide}>
           <div className={styles.rightSideContent}>

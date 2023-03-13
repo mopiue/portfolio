@@ -7,7 +7,7 @@ function Intro() {
     <section className={styles.intro}>
       <div className={styles.introLeftSide}>
         <h1 className={styles.introWhoIs}>
-          Nucassi is a self-learning
+          Nucassi is a self-taught
           <span>
             <TypeAnimation
               sequence={[

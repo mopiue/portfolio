@@ -1,12 +1,14 @@
 import styled from '@emotion/styled'
 import styles from './Title.module.css'
+import { Link } from 'react-router-dom'
 
-function Title({ title, lineWidth, marginBtm, titleDescription }) {
+function Title({ title, titleDescription, lineWidth, marginBtm }) {
   const TitleText = styled.h2`
     &::after {
       width: ${lineWidth}px;
     }
   `
+
   return (
     <>
       <div
@@ -21,7 +23,7 @@ function Title({ title, lineWidth, marginBtm, titleDescription }) {
           {title}
         </TitleText>
         {title === 'projects' && !titleDescription ? (
-          <a href="#">View all {`~~>`}</a>
+          <Link to="/works">View all {`~~>`}</Link>
         ) : (
           ''
         )}
@@ -31,7 +33,7 @@ function Title({ title, lineWidth, marginBtm, titleDescription }) {
           className={styles.titleDescription}
           style={{ marginBottom: titleDescription ? `${marginBtm}px` : '' }}
         >
-          List of my projects
+          {titleDescription}
         </p>
       )}
     </>

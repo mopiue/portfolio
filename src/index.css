@@ -82,6 +82,7 @@ img {
 }
 
 .quote__text {
+  max-width: 790px;
   padding: 32px;
   border: 1px solid #abb2bf;
   position: relative;
