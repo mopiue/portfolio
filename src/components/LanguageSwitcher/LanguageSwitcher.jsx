@@ -13,9 +13,6 @@ function LanguageSwitcher() {
     RU: {
       name: 'RU',
     },
-    TR: {
-      name: 'TR',
-    },
   }
 
   const LangSwitcherItem = styled.li`

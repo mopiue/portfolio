@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import styles from './Title.module.css'
 import { Link } from 'react-router-dom'
 
-function Title({ title, titleDescription, lineWidth, marginBtm }) {
+function Title({ title, titleDescription, lineWidth, marginBtm, marginTop }) {
   const TitleText = styled.h2`
     &::after {
       width: ${lineWidth}px;
@@ -15,7 +15,7 @@ function Title({ title, titleDescription, lineWidth, marginBtm }) {
         className={styles.title}
         style={{
           marginBottom: !titleDescription ? `${marginBtm}px` : '',
-          marginTop: titleDescription ? '53px' : '',
+          marginTop: titleDescription ? '53px' : `${marginTop}px`,
         }}
       >
         <TitleText>

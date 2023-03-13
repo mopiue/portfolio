@@ -1,8 +1,11 @@
 import Title from '../Title/Title'
 import PopupContainer from '../PopupContainer/PopupContainer'
+import withCard from '../../utils/hoc/withSimpleCard'
 import styles from './Skills.module.css'
 
 function Skills() {
+  const Card = withCard((props) => ({ ...props }))
+
   return (
     <section className={styles.skills}>
       <Title title={'skills'} lineWidth={239} marginBtm={24}></Title>
@@ -35,26 +38,11 @@ function Skills() {
           />
         </div>
         <div className={styles.knowledge}>
-          <div className={styles.card}>
-            <span className={styles.cardTitle}>Languages</span>
-            <p className={styles.cardDescription}>TypeScript PHP JavaScript</p>
-          </div>
-          <div className={styles.card}>
-            <span className={styles.cardTitle}>Databases</span>
-            <p className={styles.cardDescription}>PostgreSQL Mongo</p>
-          </div>
-          <div className={styles.card}>
-            <span className={styles.cardTitle}>Tools</span>
-            <p className={styles.cardDescription}>VSCode Figma Git</p>
-          </div>
-          <div className={styles.card}>
-            <span className={styles.cardTitle}>Other</span>
-            <p className={styles.cardDescription}>HTML CSS EJS SCSS</p>
-          </div>
-          <div className={styles.card}>
-            <span className={styles.cardTitle}>Frameworks</span>
-            <p className={styles.cardDescription}>React Express.js</p>
-          </div>
+          <Card title="Languages" text="TypeScript PHP JavaScript"></Card>
+          <Card title="Databases" text="PostgreSQL Mongo"></Card>
+          <Card title="Tools" text="VSCode Figma Git"></Card>
+          <Card title="Other" text="HTML CSS EJS SCSS"></Card>
+          <Card title="Frameworks" text="React Express.js"></Card>
         </div>
       </PopupContainer>
     </section>

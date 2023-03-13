@@ -5,7 +5,7 @@ import './index.css'
 
 import Layout from './components/Layout'
 import App from './App'
-import Projects from './pages/Projects'
+import Works from './pages/Works'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'works',
-        element: <Projects />,
+        element: <Works />,
       },
     ],
   },

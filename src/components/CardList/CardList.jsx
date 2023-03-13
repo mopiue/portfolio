@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './CardList.module.css'
 import cards from '../../data/cards.json'
+import Button from '../Button/Button'
 
 function CardList({ currentPage }) {
   const cardsPerPage = currentPage === 'home' ? 3 : cards.length
@@ -25,12 +26,8 @@ function CardList({ currentPage }) {
                 <p className={styles.cardDescription}>{card.description}</p>
               </div>
               <div className={styles.cardActions}>
-                <button className={`${styles.btnLive} ${styles.buttons}`}>
-                  Live ᐉ
-                </button>
-                <button className={`${styles.btnGithub} ${styles.buttons}`}>
-                  GitHub ≥
-                </button>
+                <Button btnType="btnLive" btnLink="#" btnText="Live" />
+                <Button btnType="btnGithub" btnLink="#" btnText="Github" />
               </div>
             </div>
           )
