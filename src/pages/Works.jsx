@@ -1,21 +1,20 @@
 import Title from '../components/Title/Title'
 import PopupContainer from '../components/PopupContainer/PopupContainer'
-import CardList from '../components/CardList/CardList'
-import withCard from '../utils/hoc/withSimpleCard'
+import ImageCardList from '../components/ImageCardList/ImageCardList'
+import SimpleCard from '../components/SimpleCard/SimpleCard'
+import worksSimpleCards from '../data/worksSimpleCards'
 
 function WorksPage() {
-  const Card = withCard((props) => ({ ...props }))
-
   return (
     <div className="worksPage">
       <Title
         title="projects"
         titleDescription="List of my projects"
-        marginBtm={69}
+        marginBtm="69"
       />
       <Title title="complete-apps" marginBtm="48" />
       <PopupContainer>
-        <CardList />
+        <ImageCardList />
       </PopupContainer>
       <div>
         <Title title="small-projects" marginBtm="48" marginTop="81" />
@@ -29,42 +28,18 @@ function WorksPage() {
               gap: '10px',
             }}
           >
-            <Card
-              title="Small Card"
-              text="This is a small card."
-              contentTitle="My blog"
-              hasButton="true"
-              btnType="btnLive"
-              btnLink="#"
-              btnText="GitHub"
-            />
-            <Card
-              title="Small Card"
-              text="This is a small card."
-              contentTitle="My blog"
-              hasButton="true"
-              btnType="btnLive"
-              btnLink="#"
-              btnText="GitHub"
-            />
-            <Card
-              title="Small Card"
-              text="This is a small card."
-              contentTitle="My blog"
-              hasButton="true"
-              btnType="btnLive"
-              btnLink="#"
-              btnText="GitHub"
-            />
-            <Card
-              title="Small Card"
-              text="This is a small card."
-              contentTitle="My blog"
-              hasButton="true"
-              btnType="btnLive"
-              btnLink="#"
-              btnText="GitHub"
-            />
+            {worksSimpleCards.map((card) => (
+              <SimpleCard
+                key={card.id}
+                title={card.title}
+                text={card.text}
+                contentTitle={card.contentTitle}
+                hasButton={card.hasButton}
+                btnType={card.btnType}
+                btnLink={card.btnLink}
+                btnText={card.btnText}
+              />
+            ))}
           </div>
         </PopupContainer>
       </div>

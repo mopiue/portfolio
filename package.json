@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "prop-types": "^15.8.1",
     "react-router-dom": "^6.8.2"
   },
   "main": "index.js",

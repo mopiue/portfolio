@@ -1,14 +1,13 @@
 import Title from '../Title/Title'
 import PopupContainer from '../PopupContainer/PopupContainer'
-import withCard from '../../utils/hoc/withSimpleCard'
+import SimpleCard from '../SimpleCard/SimpleCard'
+import skillsSimpleCards from '../../data/skillsSimpleCards.json'
 import styles from './Skills.module.css'
 
 function Skills() {
-  const Card = withCard((props) => ({ ...props }))
-
   return (
     <section className={styles.skills}>
-      <Title title={'skills'} lineWidth={239} marginBtm={24}></Title>
+      <Title title={'skills'} lineWidth="239" marginBtm="24"></Title>
       <PopupContainer cn={styles.skillsContainer}>
         <div className={styles.abstractions}>
           <img
@@ -38,11 +37,9 @@ function Skills() {
           />
         </div>
         <div className={styles.knowledge}>
-          <Card title="Languages" text="TypeScript PHP JavaScript"></Card>
-          <Card title="Databases" text="PostgreSQL Mongo"></Card>
-          <Card title="Tools" text="VSCode Figma Git"></Card>
-          <Card title="Other" text="HTML CSS EJS SCSS"></Card>
-          <Card title="Frameworks" text="React Express.js"></Card>
+          {skillsSimpleCards.map((card) => (
+            <SimpleCard key={card.id} title={card.title} text={card.text} />
+          ))}
         </div>
       </PopupContainer>
     </section>

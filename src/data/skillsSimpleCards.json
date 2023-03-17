@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Languages",
+    "text": "TypeScript PHP Javascript"
+  },
+  {
+    "id": 2,
+    "title": "Databases",
+    "text": "PostgreSQL Mongo"
+  },
+  {
+    "id": 3,
+    "title": "Tools",
+    "text": "VSCode Figma Git"
+  },
+  {
+    "id": 4,
+    "title": "Other",
+    "text": "VHTML CSS EJS SCSS"
+  },
+  {
+    "id": 5,
+    "title": "Frameworks",
+    "text": "React Node.js Express"
+  }
+]

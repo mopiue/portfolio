@@ -5,7 +5,7 @@ import styles from './Contacts.module.css'
 function Contacts() {
   return (
     <section className={styles.contacts}>
-      <Title title={'contacts'} lineWidth={127} marginBtm={45}></Title>
+      <Title title={'contacts'} lineWidth="127" marginBtm="45"></Title>
       <PopupContainer cn={styles.contactsContainer}>
         <p className={styles.contactsText}>
           I’m interested in freelance opportunities. However,

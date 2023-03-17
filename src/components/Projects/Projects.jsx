@@ -1,14 +1,14 @@
 import Title from '../Title/Title'
 import PopupContainer from '../PopupContainer/PopupContainer'
-import CardList from '../CardList/CardList'
+import ImageCardList from '../ImageCardList/ImageCardList'
 import styles from './Projects.module.css'
 
 function Projects() {
   return (
     <section className={styles.projects}>
-      <Title title="projects" lineWidth={511} marginBtm={48} />
+      <Title title="projects" lineWidth="511" marginBtm="48" />
       <PopupContainer>
-        <CardList currentPage="home" />
+        <ImageCardList currentPage="home" />
       </PopupContainer>
     </section>
   )

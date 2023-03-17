@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
-import styles from './CardList.module.css'
-import cards from '../../data/cards.json'
+import propTypes from 'prop-types'
+import styles from './ImageCardList.module.css'
+import cards from '../../data/projectsCards.json'
 import Button from '../Button/Button'
 
-function CardList({ currentPage }) {
+function ImageCardList({ currentPage }) {
   const cardsPerPage = currentPage === 'home' ? 3 : cards.length
 
   return (
@@ -36,4 +36,8 @@ function CardList({ currentPage }) {
   )
 }
 
-export default CardList
+ImageCardList.propTypes = {
+  currentPage: propTypes.string,
+}
+
+export default ImageCardList

@@ -1,0 +1,26 @@
+.card {
+  width: calc(33% - 10px);
+  border: 1px solid #abb2bf;
+}
+
+.cardTitle {
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  padding: 8px;
+  border-bottom: 1px solid #abb2bf;
+}
+
+.cardDescription {
+  color: #abb2bf;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.contentTitle {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}

@@ -1,3 +1,4 @@
+import propTypes from 'prop-types'
 import { motion } from 'framer-motion'
 
 function PopupContainer(props) {
@@ -30,6 +31,11 @@ function PopupContainer(props) {
       </motion.div>
     </>
   )
+}
+
+PopupContainer.propTypes = {
+  cn: propTypes.string,
+  children: propTypes.node.isRequired,
 }
 
 export default PopupContainer

@@ -5,7 +5,7 @@ import styles from './About.module.css'
 function About() {
   return (
     <section className={styles.about}>
-      <Title title={'about-me'} lineWidth={326} marginBtm={23}></Title>
+      <Title title={'about-me'} lineWidth="326" marginBtm="23"></Title>
       <PopupContainer cn={styles.aboutContainer}>
         <div className={styles.aboutLeftSide}>
           <p className={styles.aboutText}>

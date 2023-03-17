@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import propTypes from 'prop-types'
 import styles from './Logo.module.css'
 
 function Logo({ fWeight }) {
@@ -10,6 +11,10 @@ function Logo({ fWeight }) {
       </Link>
     </div>
   )
+}
+
+Logo.propTypes = {
+  fWeight: propTypes.number,
 }
 
 export default Logo

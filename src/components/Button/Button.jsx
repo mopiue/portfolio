@@ -1,3 +1,4 @@
+import propTypes from 'prop-types'
 import styles from './Button.module.css'
 
 function Button({ btnType, btnText, btnLink }) {
@@ -20,6 +21,12 @@ function Button({ btnType, btnText, btnLink }) {
       <span>{`${btnText} ${btnSymbol}`}</span>
     </a>
   )
+}
+
+Button.propTypes = {
+  btnType: propTypes.string.isRequired,
+  btnText: propTypes.string.isRequired,
+  btnLink: propTypes.string.isRequired,
 }
 
 export default Button
